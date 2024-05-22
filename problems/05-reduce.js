@@ -3,6 +3,14 @@ Given the `friends` array, use the `Array.reduce()` method to get the
 sum of all the years of friendship with all the friends in the array. Assign the
 output of `Array.reduce()` to the `totalYears` variable.
 */
+/*POLYAS:
+I: friends array
+O: number (totalyears)
+steps:
+1. define a function called sumYears, with friends object as parameter
+2. set up the array reduce method
+    2a: within the reduce method to get the sum of the years in friends object.
+*/
 
 const friends = [
   {
