@@ -41,7 +41,6 @@ const friends = [
 let forEachfriend = friends => {
   friends.forEach((friend) => {
     let {name, yearsOfFriendship} = friend;
-    console.log
     return console.log(name + ": " + yearsOfFriendship + " years")
 })
 }
