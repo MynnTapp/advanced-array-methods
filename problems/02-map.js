@@ -1,8 +1,9 @@
 /*
-Given the `friends` array below, use the `Array.map()` method to map the
-current array to an array of booleans representing whether or not the friend
-has been friends with the user for more than 5 years. Assign the output of
-`Array.map()` to the `goodFriendsOrNot` variable.
+Given the `friends` array below,
+  use the `Array.map()` method to map the current array to an array of ***booleans** representing whether or not
+  the friend has been friends with the user for more than 5 years.
+
+Assign the output of `Array.map()` to the `goodFriendsOrNot` variable.
 */
 
 const friends = [

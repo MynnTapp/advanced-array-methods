@@ -9,10 +9,10 @@ For example: "Albert: 3 years"
  input: array of objects
  output: strings
 
-01: Declare function called (_________) and param(friends)
- 02: declare the function for each friend
- 03: put in the for each method and pass in the friends array object as the argument.
- 04: code block: destructure the current object, and console.log the result of the destructure.
+01: Declare function called (forEachfriend) and param(friends)
+02: Put in the for each method and pass in the friends array object as the argument. For each object -
+  A. destructure the current object
+  B. console.log (name): (yearsofFriendship)
  06: return the output
 
 Output:
@@ -38,11 +38,15 @@ const friends = [
 ];
 
 // Your code here
-let forEachfriend = friends =>{
-  friends.forEach((friend) =>{console.log(friend))
-  let {name, yearsOfFriendship} = friends;
-  console.log(friend.name, friend.yearsOfFriendship)
-}}
+let forEachfriend = friends => {
+  friends.forEach((friend) => {
+    let {name, yearsOfFriendship} = friend;
+    console.log
+    return console.log(name + ": " + yearsOfFriendship + " years")
+})
+}
+
+forEachfriend(friends);
 
 
 
