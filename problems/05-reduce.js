@@ -39,14 +39,16 @@ const friends = [
 const totalYears = sumYears(friends);
 
 function sumYears(friends) {
-  friends.reduce((accumulator, currentValue) => {
-    accumulator + currentValue, 0;
-    let { yearsOfFriendship } = friends;
-    console.log(friends);
+  let years = friends.map((friend) => friend.yearsOfFriendship)
+  //let years = {friends:{yearsOfFriendship}}
+  //console.log(years)
+  years.reduce((accumulator, currentValue) => {
+    //console.log(yearsOfFriendship)
+    return accumulator + currentValue, 0;
   });
 }
 
-// console.log(totalYears); // 19
+console.log(totalYears); // 19
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 
