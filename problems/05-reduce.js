@@ -8,34 +8,45 @@ I: friends array
 O: number (totalyears)
 steps:
 1. define a function called sumYears, with friends object as parameter
+1A; Deconstruct obj
 2. set up the array reduce method
-    2a: within the reduce method to get the sum of the years in friends object.
+    2a: Add friend[i]'years into the accumulator
+    2b. Return final accumulator
+3: Assign output of array.reduce function to the total Year's variable
+  3c: Call the function when you assign it
 */
 
 const friends = [
   {
     name: "Albert",
-    yearsOfFriendship: 3
+    yearsOfFriendship: 3,
   },
   {
     name: "Angela",
-    yearsOfFriendship: 2
+    yearsOfFriendship: 2,
   },
   {
     name: "Freddy",
-    yearsOfFriendship: 8
+    yearsOfFriendship: 8,
   },
   {
     name: "Agatha",
-    yearsOfFriendship: 6
-  }
+    yearsOfFriendship: 6,
+  },
 ];
 
 // Hint: create an array of vowels to use in your solution.
-const totalYears;
+const totalYears = sumYears(friends);
+
+function sumYears(friends) {
+  friends.reduce((accumulator, currentValue) => {
+    accumulator + currentValue, 0;
+    let { yearsOfFriendship } = friends;
+    console.log(friends);
+  });
+}
 
 // console.log(totalYears); // 19
-
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 
