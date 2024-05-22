@@ -14,7 +14,7 @@ const friends = [
     name: "Angela",
     yearsOfFriendship: 2
   },
-  {
+  {~
     name: "Freddy",
     yearsOfFriendship: 8
   },
