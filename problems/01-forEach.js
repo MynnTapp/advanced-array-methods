@@ -7,11 +7,13 @@ For example: "Albert: 3 years"
 /**** POLYA:
  *
  input: array of objects
- output: newArray
+ output: strings
 
 01: Declare function called (_________) and param(friends)
-02: Create a variable called newArray and assign to an empty array
-03: Return array.forEach method
+ 02: declare the function for each friend
+ 03: put in the for each method and pass in the friends array object as the argument.
+ 04: code block: destructure the current object, and console.log the result of the destructure.
+ 06: return the output
 
 Output:
  */
@@ -36,8 +38,12 @@ const friends = [
 ];
 
 // Your code here
+let forEachfriend = friends =>{
+  friends.forEach((friend) =>{console.log(friend))
+  let {name, yearsOfFriendship} = friends;
+  console.log(friend.name, friend.yearsOfFriendship)
+}}
 
-friends.forEach((friend) => console.log(friend))
 
 
 
