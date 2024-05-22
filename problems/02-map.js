@@ -36,14 +36,14 @@ const friends = [
   }
 ];
 
-let goodfriendsMap = friends => {
-  friends.map((friend) => {
-  let {yearsOfFriendship} = friend;
-  yearsOfFriendship > 5;
- })
- return map;
+let goodFriendsMap = friends => {
+  return friends.map((friend) => {
+    let { yearsOfFriendship } = friend;
+    return yearsOfFriendship > 5;
+  })
+  //return ;
 }
-const goodFriendsOrNot = map;
+const goodFriendsOrNot = goodFriendsMap(friends);
 console.log(goodFriendsOrNot);          // [false, false, true, true]
 
 
@@ -53,4 +53,4 @@ console.log(goodFriendsOrNot);          // [false, false, true, true]
 
 try {
   module.exports = goodFriendsOrNot;
-} catch {}
+} catch { }
