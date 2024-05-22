@@ -34,14 +34,17 @@ step 4: the filteredFriends get assigned to the called callback function
   }
 ];
 
-let filter = friends =>{
-  let {name, yearsOfFriendship} = friends
-return friends.filter((friend) => friend.startsWith("A") && yearsOfFriendship > 5)
+let filter = friends => {
+  return friends.filter((friend) => {
+    let {name, yearsOfFriendship} = friend;
+    return name.startsWith("A") && yearsOfFriendship > 5
+  })
 }
 
-const filteredFriends;
 
-// console.log(filteredFriends); // [ { name: "Agatha", yearsOfFriendship: 6 } ]
+const filteredFriends = filter(friends);
+
+console.log(filteredFriends); // [ { name: "Agatha", yearsOfFriendship: 6 } ]
 
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
