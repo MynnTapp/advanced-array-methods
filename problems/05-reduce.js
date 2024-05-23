@@ -36,17 +36,21 @@ const friends = [
 ];
 
 // Hint: create an array of vowels to use in your solution.
-const totalYears = sumYears(friends);
-
-function sumYears(friends) {
-  let years = friends.map((friend) => friend.yearsOfFriendship)
-  //let years = {friends:{yearsOfFriendship}}
-  //console.log(years)
-  years.reduce((accumulator, currentValue) => {
-    //console.log(yearsOfFriendship)
-    return accumulator + currentValue, 0;
+let map = function (friends) {
+  return friends.map((friend) => {
+    return friend.yearsOfFriendship;
   });
-}
+};
+
+let years = map(friends);
+
+let sumYears = function (years) {
+  return years.reduce((sum, years) => {
+    return (sum += years);
+  }, 0);
+};
+
+const totalYears = sumYears(years);
 
 console.log(totalYears); // 19
 
